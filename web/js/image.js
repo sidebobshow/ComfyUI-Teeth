@@ -55,6 +55,7 @@ app.registerExtension({
       const widget = node.addDOMWidget("button", "OpenDir", buttonEl, {
         serialize: false
       });
+      widget.serialize = false;
       widget.buttonEl = buttonEl;
       buttonEl.addEventListener("click", () => {
         console.log("点击了按钮: OpenDir");
